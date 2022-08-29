@@ -18,8 +18,29 @@
 
     <title>Jesi</title>
 </head>
-<body>
-    
+<body>  
+    <!----======== Header Section ======== -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="jesi-logo">
+        </a>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class='bx bx-menu img1'></i>
+            <i class='bx bx-x img2'></i>
+        </label>
+        <div class="links">
+          <div>
+            <a class="link" href="index.html">Home</a>
+            <a class="link" href="#">Nosotros</a>
+            <a class="link" href="#">Servicios</a>
+            <a class="link" href="#">Clientes</a>
+            <a class="link" href="#">Destinos</a>
+            <a class="link" href="#contact">Contacto</a>
+          </div>
+        </div>
+    </header>
+
     <!----======== Front/Main Section ======== -->
     <section class="front">
 
@@ -154,7 +175,7 @@
     </section>
 
     <!----======== Contact Form Section ======== -->
-    <section class="contact">
+    <section class="contact" id="contact">
         <h4>¡Contactate con nosotros para planificar tu proximo viaje!</h4>
         <hr>
         <div class="contact__form">
@@ -209,5 +230,6 @@
         interval: 3000
     })
     </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
