@@ -10,18 +10,19 @@
     
     --workSansFont: "Work Sans", sans-serif;
     --zenAntiqueFont: "Zen Antique Soft", sans-serif;
-  }
+}
+
+body{
+    overflow-x: hidden;
+}
 
 header{
     position: relative;
     background: rgba(157, 148, 151, 0.2);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 }
-header label .img1{
-    /* color: var(--mainColor); */
-}
 
-.destinations h3{
+.us h3{
     
     font-family: var(--zenAntiqueFont);
     font-style: normal;
@@ -33,7 +34,7 @@ header label .img1{
     color: var(--titleColor);
 }
 
-.destinations hr{
+.us hr{
     outline: none;
     border: none;
     height: 5px;
@@ -44,31 +45,21 @@ header label .img1{
     border-radius: 5px;
 }
 
-.grid{
-    
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 20px;
-    padding-bottom: 126px;
+.us .us__main{
+    overflow-x: hidden;
 }
 
-.grid .grid__card{
-    width: 295px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
-    margin: 0px auto;
+.us .us__main img{
+    margin-bottom: 20px;
 }
 
-.grid .grid__card h2{
-    width: 100%;
+.us .us__main p{
+    padding: 0px 16px 110px 16px;
     font-family: var(--workSansFont);
     font-style: normal;
-    font-weight: 500;
-    font-size: 1.875em;
-    line-height: 35px;
-    text-align: left;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
     letter-spacing: -0.02em;
-    padding: 10px;
+    color: var(--titleColor);
 }
