@@ -16,6 +16,11 @@
     --zenAntiqueFont: 'Zen Antique Soft', sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+    background-color: #ffffff;
+}
+
 /* Header */
 
 header{
@@ -32,6 +37,10 @@ header{
     justify-content: space-between;
     align-items: center;
     z-index: 20;
+    @media (min-width: 767px){
+        padding: 16px 50px 16px 50px;
+    }
+
 }
 .logo{
     display: flex;
@@ -52,7 +61,7 @@ header{
     color: white;
 }
 .links{
-width:250px;
+    width:250px;
 }
 .links div{
   display: flex;
@@ -96,6 +105,15 @@ header label{
     }
 }
 
+header label{
+    width: 25px; 
+    height: 31.746px;
+    i{
+        font-size: 2em;
+        color: #fff;
+    }
+}
+
 // header label , header label:before, header label:after{
 //     // background-color:#009688;
 //     // border-radius: 3px;
@@ -127,7 +145,7 @@ header label img{
 header label .img2{
     display: none;
 }
-@media (max-width: 700px)
+@media (max-width: 900px)
 {
     .links {
         position: fixed;
@@ -232,11 +250,12 @@ header label .img2{
 
 /* Front section */
 .front{
-    background-color: transparent;
+
     height: 844px;
-    max-width: 428px;
+    // max-width: 428px;
     .carousel-item{
         img{
+
             width: 100%;
             height: 844px;
             object-fit: cover;
@@ -300,6 +319,36 @@ header label .img2{
             }
         }
     }
+    /* responsive tablet 834px o 767px */
+    @media (min-width: 767px)
+    {
+        .front-container{
+            position: absolute;
+            z-index: 10;
+            height: 844px;
+            padding: 221px 26px 208px 60px;
+            background-color: #0002;
+            h1{
+                font-size: 64px;
+                line-height: 93px;
+                max-width: 100%;
+            }
+            
+            p{
+                font-size: 30px;
+                line-height: 35px;
+            }
+            h3{
+                font-size: 30px;
+                line-height: 35px;
+            }
+        }
+    }
+    /* responsive desktop 1440px */
+    @media screen and (min-width: 1366px)
+    {
+
+    }
 }
 
 /* Foundress section */
@@ -341,6 +390,16 @@ header label .img2{
             letter-spacing: -0.02em;
         }
     }
+    @media (min-width: 767px){
+        .foundress__detail{
+            padding: 94px 60px 89px 50px;
+            h2{
+                
+                font-size: 60px;
+                line-height: 87px;
+            }
+        }
+    }
 }
 
 /* Services section */
@@ -366,38 +425,55 @@ header label .img2{
         border-radius: 5px;
         margin: 20px 0px 123px 0px;
     }
-    .services__card{
-        background-color: #fff;
-        padding: 60px 30px 51px 30px;
-        margin-bottom: 20px;
-        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
-        border-radius: 2px;
-        text-align: center;
-        img{
-            width: 66px;
-            height: 66px;
-            margin-bottom: 23px;
+    .card-container{
+
+        .services__card{
+            background-color: #fff;
+            padding: 60px 30px 51px 30px;
+            margin-bottom: 20px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+            border-radius: 2px;
+            text-align: center;
+            max-width: 400px;
+            height: 400px;
+            img{
+                width: 66px;
+                height: 66px;
+                margin-bottom: 23px;
+            }
+            h3{
+                font-family: 'Work Sans';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 30px;
+                line-height: 35px;
+                text-align: center;
+                letter-spacing: -0.02em;
+                color: #000;
+                margin-bottom: 16px;
+            }
+            p{
+                font-family: 'Work Sans';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 23px;
+                text-align: center;
+                letter-spacing: -0.02em;
+                color: #000;
+            }
         }
+    }
+    @media (min-width: 767px){
+        padding: 71px 50px 81px 50px;
         h3{
-            font-family: 'Work Sans';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 30px;
-            line-height: 35px;
-            text-align: center;
-            letter-spacing: -0.02em;
-            color: #000;
-            margin-bottom: 16px;
+            font-size: 40px;
+            line-height: 58px;
         }
-        p{
-            font-family: 'Work Sans';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 20px;
-            line-height: 23px;
-            text-align: center;
-            letter-spacing: -0.02em;
-            color: #000;
+        .card-container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
     }
 }
@@ -423,30 +499,54 @@ header label .img2{
         border-radius: 5px;
         margin: 20px 0px 101px 0px;
     }
-    .trajectory__card{
-        background-color: var(--mainColor);
-        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
-        border-radius: 5px;
-        padding: 103px 0px;
-        margin-bottom: 20px;
-        text-align: center;
-        h2{
-            font-family: var(--workSansFont);
-            font-style: normal;
-            font-weight: 300;
-            font-size: 96px;
-            line-height: 113px;
+    .card-container{
+        .trajectory__card{
+            background-color: var(--mainColor);
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            // padding: 103px 0px;
+            margin-bottom: 20px;
             text-align: center;
-            letter-spacing: -0.02em;
+            max-width: 400px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            h2{
+                font-family: var(--workSansFont);
+                font-style: normal;
+                font-weight: 300;
+                font-size: 96px;
+                line-height: 113px;
+                text-align: center;
+                letter-spacing: -0.02em;
+                width: 100%;
+            }
+            p{
+                font-family: var(--workSansFont);
+                font-style: normal;
+                font-weight: 300;
+                font-size: 30px;
+                line-height: 35px;
+                text-align: center;
+                padding: 0px 64px;
+            }
         }
-        p{
-            font-family: var(--workSansFont);
-            font-style: normal;
-            font-weight: 300;
-            font-size: 30px;
-            line-height: 35px;
-            text-align: center;
-            padding: 0px 64px;
+    }
+    @media (min-width: 767px){
+        padding: 148px 50px 102px 50px;
+        h2{
+            font-size: 40px;
+            line-height: 58px;
+        }
+        .card-container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            .trajectory__card{
+                width: 400px;
+            }
         }
     }
 }
@@ -457,6 +557,7 @@ header label .img2{
     padding: 101px 0px 104px 16px;
     border-bottom: 10px solid var(--mainColor);
     border-top: 10px solid var(--mainColor);
+    overflow-x: hidden;
     h2{
         font-family: var(--zenAntiqueFont);
         font-style: normal;
@@ -509,6 +610,13 @@ header label .img2{
                 line-height: 35px;
                 color: var(--mainColor);
             }
+        }
+    }
+    @media (min-width: 767px){
+        padding: 101px 0px 104px 50px;
+        h2{
+            font-size: 40px;
+            line-height: 58px;
         }
     }
 }
@@ -575,6 +683,16 @@ header label .img2{
             font-size: var(--24FontSize);
             line-height: 28px;
             letter-spacing: -0.02em;
+        }
+    }
+    @media (min-width: 767px){
+        h4{
+            font-size: 32px;
+            line-height: 46px;
+            padding: 0px 172px;
+        }
+        .contact__form{
+            padding: 0px 50px;
         }
     }
 }
@@ -644,5 +762,11 @@ footer{
             margin: 0;
         }
     }
+    @media (min-width: 767px){
+        padding: 16px 50px 20px 50px;
+    }
 }
+
+/* tablet responsive notes */
+/* starts at 767px and works fine up to 899px */
 

@@ -16,6 +16,11 @@
   --zenAntiqueFont: "Zen Antique Soft", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+
 /* Header */
 header {
   position: absolute;
@@ -28,6 +33,11 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 20;
+}
+@media (min-width: 767px) {
+  header {
+    padding: 16px 50px 16px 50px;
+  }
 }
 
 .logo {
@@ -95,6 +105,15 @@ header label .img2 {
   position: fixed;
 }
 
+header label {
+  width: 25px;
+  height: 31.746px;
+}
+header label i {
+  font-size: 2em;
+  color: #fff;
+}
+
 header label img {
   position: absolute;
   top: 8.8px;
@@ -107,7 +126,7 @@ header label .img2 {
   display: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .links {
     position: fixed;
     top: 0px;
@@ -204,9 +223,9 @@ header label .img2 {
 }
 /* Front section */
 .front {
-  background-color: transparent;
   height: 844px;
-  max-width: 428px;
+  /* responsive tablet 834px o 767px */
+  /* responsive desktop 1440px */
 }
 .front .carousel-item img {
   width: 100%;
@@ -271,7 +290,28 @@ header label .img2 {
   position: relative;
   top: 2px;
 }
-
+@media (min-width: 767px) {
+  .front .front-container {
+    position: absolute;
+    z-index: 10;
+    height: 844px;
+    padding: 221px 26px 208px 60px;
+    background-color: rgba(0, 0, 0, 0.1333333333);
+  }
+  .front .front-container h1 {
+    font-size: 64px;
+    line-height: 93px;
+    max-width: 100%;
+  }
+  .front .front-container p {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .front .front-container h3 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
 /* Foundress section */
 .foundress {
   display: flex;
@@ -312,6 +352,15 @@ header label .img2 {
   line-height: 19px;
   letter-spacing: -0.02em;
 }
+@media (min-width: 767px) {
+  .foundress .foundress__detail {
+    padding: 94px 60px 89px 50px;
+  }
+  .foundress .foundress__detail h2 {
+    font-size: 60px;
+    line-height: 87px;
+  }
+}
 
 /* Services section */
 .services {
@@ -337,20 +386,22 @@ header label .img2 {
   border-radius: 5px;
   margin: 20px 0px 123px 0px;
 }
-.services .services__card {
+.services .card-container .services__card {
   background-color: #fff;
   padding: 60px 30px 51px 30px;
   margin-bottom: 20px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
   text-align: center;
+  max-width: 400px;
+  height: 400px;
 }
-.services .services__card img {
+.services .card-container .services__card img {
   width: 66px;
   height: 66px;
   margin-bottom: 23px;
 }
-.services .services__card h3 {
+.services .card-container .services__card h3 {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 300;
@@ -361,7 +412,7 @@ header label .img2 {
   color: #000;
   margin-bottom: 16px;
 }
-.services .services__card p {
+.services .card-container .services__card p {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 300;
@@ -370,6 +421,20 @@ header label .img2 {
   text-align: center;
   letter-spacing: -0.02em;
   color: #000;
+}
+@media (min-width: 767px) {
+  .services {
+    padding: 71px 50px 81px 50px;
+  }
+  .services h3 {
+    font-size: 40px;
+    line-height: 58px;
+  }
+  .services .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 /* Trajectory section */
@@ -394,15 +459,20 @@ header label .img2 {
   border-radius: 5px;
   margin: 20px 0px 101px 0px;
 }
-.trajectory .trajectory__card {
+.trajectory .card-container .trajectory__card {
   background-color: var(--mainColor);
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
-  padding: 103px 0px;
   margin-bottom: 20px;
   text-align: center;
+  max-width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
-.trajectory .trajectory__card h2 {
+.trajectory .card-container .trajectory__card h2 {
   font-family: var(--workSansFont);
   font-style: normal;
   font-weight: 300;
@@ -410,8 +480,9 @@ header label .img2 {
   line-height: 113px;
   text-align: center;
   letter-spacing: -0.02em;
+  width: 100%;
 }
-.trajectory .trajectory__card p {
+.trajectory .card-container .trajectory__card p {
   font-family: var(--workSansFont);
   font-style: normal;
   font-weight: 300;
@@ -420,12 +491,30 @@ header label .img2 {
   text-align: center;
   padding: 0px 64px;
 }
+@media (min-width: 767px) {
+  .trajectory {
+    padding: 148px 50px 102px 50px;
+  }
+  .trajectory h2 {
+    font-size: 40px;
+    line-height: 58px;
+  }
+  .trajectory .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .trajectory .card-container .trajectory__card {
+    width: 400px;
+  }
+}
 
 /* customers section */
 .customers {
   padding: 101px 0px 104px 16px;
   border-bottom: 10px solid var(--mainColor);
   border-top: 10px solid var(--mainColor);
+  overflow-x: hidden;
 }
 .customers h2 {
   font-family: var(--zenAntiqueFont);
@@ -473,6 +562,15 @@ header label .img2 {
   font-size: var(--30FontSize);
   line-height: 35px;
   color: var(--mainColor);
+}
+@media (min-width: 767px) {
+  .customers {
+    padding: 101px 0px 104px 50px;
+  }
+  .customers h2 {
+    font-size: 40px;
+    line-height: 58px;
+  }
 }
 
 /* contact section */
@@ -538,6 +636,16 @@ header label .img2 {
   line-height: 28px;
   letter-spacing: -0.02em;
 }
+@media (min-width: 767px) {
+  .contact h4 {
+    font-size: 32px;
+    line-height: 46px;
+    padding: 0px 172px;
+  }
+  .contact .contact__form {
+    padding: 0px 50px;
+  }
+}
 
 /* footer section */
 footer {
@@ -600,5 +708,13 @@ footer .contact-info .contact-info__item h4 {
 footer .contact-info .contact-info__item:last-child {
   margin: 0;
 }
+@media (min-width: 767px) {
+  footer {
+    padding: 16px 50px 20px 50px;
+  }
+}
+
+/* tablet responsive notes */
+/* starts at 767px and works fine up to 899px */
 
 /*# sourceMappingURL=styles.css.map */

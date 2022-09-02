@@ -82,3 +82,24 @@ header{
     margin: 0;
 }
 
+@media (min-width: 767px){
+    .exclusive-services{
+        padding: 0px 50px;
+    }
+
+    .exclusive-services h3{
+        font-size: 40px;
+        line-height: 58px;
+    }
+    
+    .grid{
+    
+        width: 100%;
+        max-width: 610px;
+        margin: 0px auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        padding-bottom: 126px;
+    }
+}

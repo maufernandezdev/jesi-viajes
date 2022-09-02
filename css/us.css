@@ -63,3 +63,21 @@ header{
     letter-spacing: -0.02em;
     color: var(--titleColor);
 }
+
+
+@media (min-width: 767px){
+    .us{
+        padding: 0px 50px;
+    }
+    .us h3{
+        font-size: 40px;
+        line-height: 58px;
+    }
+    .us .us__main p{
+        font-size: 24px;
+        line-height: 26px;
+    }
+    .us .us__main img{
+        width: 100%;
+    }
+}
