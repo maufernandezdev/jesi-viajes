@@ -9,3 +9,17 @@ for (const link of links)
     });
     
 }
+
+if(screen.width > 1366)
+{
+    let img = document.getElementById('foundress');
+    let imgUs = document.getElementById('usPhoto');
+    if(img)
+    {
+        img.setAttribute("src", "images/nancy-desktop.png")
+    }
+    if(imgUs)
+    {
+        imgUs.setAttribute("src", "images/nancy-desktop-us.png")
+    }
+}

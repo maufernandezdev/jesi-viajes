@@ -81,3 +81,35 @@ header{
         width: 100%;
     }
 }
+
+@media (min-width: 1366px){
+    header nav .links div a {
+        color: var(--titleColor);
+    }
+    .us{
+        max-width: 1440px;
+        padding: 16px 100px 148px 100px;
+        margin: 0px auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .us h3{
+        width: 100%;
+    }
+
+    .us .us__main{
+        display: flex;
+    }
+
+    .us .us__main img{
+        width: 505px;
+        margin-right: 75px;
+    }
+    .us .us__main p{
+        font-size: 24px;
+        line-height: 26px;
+    }
+    .us hr{
+        width: 200px;
+    }
+}
