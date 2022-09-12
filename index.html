@@ -7,13 +7,15 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css">
     <!----===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!----======== AOS ======== -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!----======== Slick CSS ======== -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
     <!----===== Fonts ===== -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
@@ -129,12 +131,12 @@
     <!----======== Foundress Section ======== -->
     <section class="foundress">
         <div class="foundress__container">
-            <img src="images/nancy-responsive.png" alt="nancy-img" id="foundress">
+            <img src="images/nancy-responsive2.png" alt="nancy-img" id="foundress" data-aos="fade-right" data-aos-duration="900" data-aos-once="true">
             <div class="foundress__detail">
                 <div class="foundress__content">
                     <h2>Hola soy Nancy</h2>
                     <hr>
-                    <p>Para mi los viajes no arrancan cuando te subis al avión, sino cuando empezas a planificarlo. Por eso voy acompañarte, desde el principio para transformar tus ideas en experiencias únicas. </p>
+                    <p>Para mi los viajes no arrancan cuando subis al avión, sino cuando empezas a planificarlo. Por eso voy acompañarte, desde el principio para transformar tus ideas en experiencias únicas. </p>
                 </div>
             </div>
         </div>
@@ -146,19 +148,19 @@
             <h3>Nuestro Servicio</h3>
             <hr>
             <div class="card-container">
-                <div class="services__card">
+                <div class="services__card" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
                     <img src="images/personalized.svg" alt="personalized-icon">
                     <h3>Atención personalizada</h3>
                     <p>Vamos a tener comunicación directa en todo momento. Si tenes un problema durante el viaje, te ayudamos a solucionarlo.</p>
                 </div>
         
-                <div class="services__card">
+                <div class="services__card" data-aos="fade-up" data-aos-duration="700" data-aos-once="true">
                     <img src="images/check.svg" alt="check-icon">
                     <h3>Organización completa</h3>
                     <p>Nos vamos a encargar de que cada detalle de tu viaje este cubierto. Vos solo nos contas a donde queres viajar y nosostros nos ocupamos del resto.</p>
                 </div>
         
-                <div class="services__card">
+                <div class="services__card" data-aos="fade-up" data-aos-duration="900" data-aos-once="true">
                     <img src="images/security.svg" alt="security-icon">
                     <h3>Seguridad y confianza</h3>
                     <p>Nuestros pasajeros son como parte de nuestra familia y por eso nos encargamos de que todo sea claro y concreto para que tengan una experiencia única.</p>
@@ -173,17 +175,17 @@
             <h2>Trayectoria</h2>
             <hr>
             <div class="card-container">
-                <div class="trajectory__card">
+                <div class="trajectory__card" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
                     <h2>+20</h2>
                     <p>años de trayectoria</p>
                 </div>
         
-                <div class="trajectory__card">
+                <div class="trajectory__card" data-aos="fade-up" data-aos-duration="700" data-aos-once="true">
                     <h2>+15.000</h2>
                     <p>viajes planificados</p>
                 </div>
         
-                <div class="trajectory__card">
+                <div class="trajectory__card" data-aos="fade-up" data-aos-duration="900" data-aos-once="true">
                     <h2>+80</h2>
                     <p class="countries">paises visitados por clientes</p>
                 </div>
@@ -298,7 +300,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script>
     $('.carousel').carousel({
         interval: 3000
@@ -319,9 +324,9 @@
                     }
                 },
                 {
-                    breakpoint: 1344,
+                    breakpoint: 1490,
                     settings: {
-                        slidesToShow: 2,
+                        slidesToShow: 3,
                         slidesToScroll: 1
                     }
                 },

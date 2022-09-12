@@ -92,7 +92,7 @@ header label .img1{
     }
 }
 
-@media (min-width: 1366px){
+@media (min-width: 1240px){
     header nav .links div a {
         color: var(--titleColor);
     }

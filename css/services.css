@@ -103,7 +103,7 @@ header{
         padding-bottom: 126px;
     }
 }
-@media (min-width: 1366px){
+@media (min-width: 1240px){
     header nav .links div a {
         color: var(--titleColor);
     }

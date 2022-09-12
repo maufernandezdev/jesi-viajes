@@ -10,16 +10,16 @@ for (const link of links)
     
 }
 
-if(screen.width > 1366)
+if(screen.width > 1240)
 {
     let img = document.getElementById('foundress');
     let imgUs = document.getElementById('usPhoto');
     if(img)
     {
-        img.setAttribute("src", "images/nancy-desktop.png")
+        img.setAttribute("src", "images/nancy-desktop2.png")
     }
     if(imgUs)
     {
-        imgUs.setAttribute("src", "images/nancy-desktop-us.png")
+        imgUs.setAttribute("src", "images/nancy-desktop-us2.png")
     }
 }
