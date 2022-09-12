@@ -24,7 +24,8 @@ header{
 
 .us h3{
     
-    font-family: var(--zenAntiqueFont);
+    /* font-family: var(--zenAntiqueFont); */
+    font-family: 'Zen Antique Soft';
     font-style: normal;
     font-weight: 400;
     font-size: 1.5em;
