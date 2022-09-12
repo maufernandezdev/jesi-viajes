@@ -315,7 +315,7 @@ header label .img2 {
 .front .front-container h1 {
   color: #fff;
   font-size: var(--titleFontSize);
-  font-family: var(--zenAntiqueFont);
+  font-family: "Zen Antique Soft";
   font-style: normal;
   font-weight: 400;
   line-height: 58px;
@@ -475,7 +475,7 @@ header label .img2 {
 .foundress .foundress__detail h2 {
   font-size: var(--36FontSize);
   width: 100%;
-  font-family: var(--zenAntiqueFont);
+  font-family: "Zen Antique Soft";
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -591,7 +591,7 @@ header label .img2 {
   padding: 71px 12px 81px 16px;
 }
 .services h3 {
-  font-family: var(--zenAntiqueFont);
+  font-family: "Zen Antique Soft";
   font-style: normal;
   font-weight: 400;
   font-size: var(--24FontSize);
@@ -747,7 +747,7 @@ header label .img2 {
   padding: 148px 12px 102px 16px;
 }
 .trajectory h2 {
-  font-family: var(--zenAntiqueFont);
+  font-family: "Zen Antique Soft";
   font-size: var(--titleFontSize);
   font-style: normal;
   font-weight: 400;
@@ -858,7 +858,7 @@ header label .img2 {
   overflow-x: hidden;
 }
 .customers h2 {
-  font-family: var(--zenAntiqueFont);
+  font-family: "Zen Antique Soft";
   font-style: normal;
   font-weight: 400;
   font-size: var(--36FontSize);
@@ -947,7 +947,7 @@ header label .img2 {
   padding: 109px 0px 123px 0px;
 }
 .contact h4 {
-  font-family: var(--zenAntiqueFont);
+  font-family: "Zen Antique Soft";
   font-style: normal;
   font-weight: 400;
   font-size: 1.25em;
