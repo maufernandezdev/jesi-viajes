@@ -108,15 +108,31 @@ header{
     header nav .links div a {
         color: var(--titleColor);
     }
+
+    .links a::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        background-color: #292929;
+        transform: scale(0, 1);
+    }
     .exclusive-services{
         max-width: 1440px;
         padding: 16px 100px 148px 100px;
         margin: 0px auto;
         display: flex;
         flex-wrap: wrap;
+        justify-content: flex-start;
     }
     .exclusive-services h3{
         width: 100%;
+        padding-left: 0;
+    }
+    .exclusive-services hr{
+        margin-left: 0;
     }
 
     .grid{
@@ -125,12 +141,32 @@ header{
         grid-gap: 0;
         row-gap : 15px; 
         column-gap : 0px;
-        max-width: 1440px;
+        max-width: 1240px;
         width: 100%;
         justify-content: flex-start;
     }
 
+    .grid .grid__card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 275px;
+        height: 275px;
+        background: var(--mainColor);
+        border-radius: 2px;
+        margin: 0px auto;
+    }
+
     .exclusive-services hr{
         width: 200px;
+    }
+}
+
+@media (min-width: 1440px){
+    .grid .grid__card{
+        width: 295px;
+        height: 295px;
     }
 }

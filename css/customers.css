@@ -1,0 +1,140 @@
+header{
+    position: relative;
+    background: rgba(157, 148, 151, 0.2);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.curstomers-imgs h3{
+    
+    font-family: 'Zen Antique Soft';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 35px;
+    padding: 47px 0px 0px 0px;
+    letter-spacing: -0.02em;
+    color: var(--titleColor);
+}
+
+.curstomers-imgs hr{
+    outline: none;
+    border: none;
+    height: 5px;
+    width: 100px;
+    margin: 20px 0px 48px 0px;
+    background-color: var(--mainColor);
+    opacity: 1;
+    border-radius: 5px;
+}
+@media (min-width: 1240px){
+
+  header nav .links div a {
+    color: var(--titleColor);
+  }
+  
+  .links a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #292929;
+    transform: scale(0, 1);
+  }
+
+  .curstomers-imgs hr{
+
+    width: 200px;
+  }
+}
+
+/* customers section */
+/* .customers {
+    padding: 101px 0px 104px 16px;
+    overflow-x: hidden;
+  }
+  .customers h2 {
+    font-family: "Zen Antique Soft";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 52px;
+    letter-spacing: -0.02em;
+    color: var(--titleColor);
+  }
+  .customers hr {
+    width: 85px;
+    outline: none;
+    border: none;
+    height: 5px;
+    color: var(--mainColor);
+    opacity: 1;
+    border-radius: 5px;
+    margin: 20px 0px 64px 0px;
+  }
+  .customers .customersCarousel .carousel__item p {
+    background-color: var(--mainColor);
+    font-family: var(--workSansFont);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    border-radius: 5px 5px 0px 0px;
+    padding: 0px 27px;
+    width: 355px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+  }
+  .customers .customersCarousel .carousel__item img {
+    position: relative;
+    top: -17px;
+    left: 20px;
+  }
+  .customers .customersCarousel .carousel__item h3 {
+    font-family: var(--workSansFont);
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--30FontSize);
+    line-height: 35px;
+    color: var(--mainColor);
+  }
+  @media (min-width: 767px) {
+    .customers {
+      padding: 101px 0px 104px 50px;
+    }
+    .customers h2 {
+      font-size: 40px;
+      line-height: 58px;
+    }
+  }
+  @media (min-width: 1240px) {
+    .customers {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      border-top: none;
+    }
+    .customers .customers__content {
+      display: flex;
+      flex-wrap: wrap;
+      min-width: 1240px;
+      max-width: 1440px;
+      width: 100%;
+      padding: 0px 100px;
+    }
+    .customers .customers__content h2 {
+      width: 100%;
+    }
+    .customers .customers__content .customersCarousel {
+      width: 100%;
+    }
+    .customers .customers__content .customersCarousel .carousel__item {
+      max-width: 500px;
+    }
+    .customers .customers__content .customersCarousel .carousel__item p {
+      width: 500px;
+    }
+  } */

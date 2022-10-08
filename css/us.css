@@ -87,6 +87,16 @@ header{
     header nav .links div a {
         color: var(--titleColor);
     }
+    .links a::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        background-color: #292929;
+        transform: scale(0, 1);
+    }
     .us{
         max-width: 1440px;
         padding: 16px 100px 148px 100px;
@@ -96,8 +106,11 @@ header{
     }
     .us h3{
         width: 100%;
+        padding-left: 0;
     }
-
+    .us hr{
+        margin-left: 0;
+    }
     .us .us__main{
         display: flex;
     }

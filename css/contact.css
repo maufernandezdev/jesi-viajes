@@ -1,0 +1,27 @@
+header{
+    position: relative;
+    background: rgba(157, 148, 151, 0.2);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 1240px){
+
+    header nav .links div a {
+        color: var(--titleColor);
+    }
+    
+    .links a::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      height: 2px;
+      background-color: #292929;
+      transform: scale(0, 1);
+    }
+  }
+
+.contact{
+    padding: 47px 0px 100px 0px;
+}
