@@ -341,7 +341,7 @@ header label .img2 {
 .front .front-container h1 {
   color: #fff;
   font-size: var(--titleFontSize);
-  font-family: "Zen Antique Soft" !important;
+  font-family: "Zen Antique Soft", serif;
   font-style: normal;
   font-weight: 400;
   line-height: 58px;
