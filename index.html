@@ -7,6 +7,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+     <!----======== Toastify ======== -->
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <!----===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <!----======== AOS ======== -->
@@ -273,32 +275,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!----======== Toastify ======== -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <!----======== Email js ======== -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">emailjs.init('PJ1m68Nvi6hPddHWI')</script>
-    <script>
-        // emailjs
-        const btn = document.querySelector('#btn-send');
-        const form = document.querySelector('#form');
-
-        form.addEventListener('submit', function(event) {
-        event.preventDefault();
-
-        btn.value = 'Enviando...';
-
-        const serviceID = 'default_service';
-        const templateID = 'template_24lczss';
-
-        emailjs.sendForm(serviceID, templateID, this)
-            .then(() => {
-            btn.value = 'Enviar';
-            alert('Sent!');
-            }, (err) => {
-            btn.value = 'Enviar';
-            alert(JSON.stringify(err));
-            });
-        });
-    </script>
     <script>
         AOS.init();
     </script>

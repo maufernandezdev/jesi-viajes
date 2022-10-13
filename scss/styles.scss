@@ -352,7 +352,7 @@ header label .img2{
             color: #fff;
             font-size: var(--titleFontSize);
             // font-family: var(--zenAntiqueFont);
-            font-family: 'Zen Antique Soft';
+            font-family: 'Zen Antique Soft' !important;
             font-style: normal;
             font-weight: 400;
             line-height: 58px;
@@ -548,7 +548,7 @@ header label .img2{
             font-size: var(--36FontSize);
             width: 100%;
             // font-family: var(--zenAntiqueFont);
-            font-family: 'Zen Antique Soft';
+            font-family: 'Zen Antique Soft' !important;
             font-style: normal;
             font-weight: 400;
             font-size: 36px;
@@ -671,7 +671,7 @@ header label .img2{
     padding: 71px 12px 81px 16px;
     h3{
         // font-family: var(--zenAntiqueFont);
-        font-family: 'Zen Antique Soft';
+        font-family: 'Zen Antique Soft' !important;
         font-style: normal;
         font-weight: 400;
         font-size: var(--24FontSize);
@@ -837,7 +837,7 @@ header label .img2{
     border-top: 10px solid var(--mainColor);
     h2{
         // font-family: var(--zenAntiqueFont);
-        font-family: 'Zen Antique Soft';
+        font-family: 'Zen Antique Soft' !important;
         font-size: var(--titleFontSize);
         font-style: normal;
         font-weight: 400;
@@ -869,7 +869,7 @@ header label .img2{
             flex-wrap: wrap;
             flex-direction: column;
             h2{
-                font-family: var(--workSansFont);
+                font-family: var(--workSansFont) !important;
                 font-style: normal;
                 font-weight: 300;
                 font-size: 96px;
@@ -1054,7 +1054,7 @@ header label .img2{
     overflow-x: hidden;
     .customers__content{
         h2{
-            font-family: 'Zen Antique Soft';
+            font-family: 'Zen Antique Soft' !important;
             font-style: normal;
             font-weight: 400;
             font-size: var(--24FontSize);
@@ -1157,7 +1157,7 @@ header label .img2{
         padding-bottom: 80px;
         h4{
             // font-family: var(--zenAntiqueFont);
-            font-family: 'Zen Antique Soft';
+            font-family: 'Zen Antique Soft' !important;
             font-style: normal;
             font-weight: 400;
             font-size: 1.25em;
