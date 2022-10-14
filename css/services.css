@@ -21,9 +21,9 @@ header{
 .exclusive-services h3{
     
     /* font-family: var(--zenAntiqueFont); */
-    font-family: 'Zen Antique Soft';
+    font-family: 'Zen Antique Soft', serif;
+    font-weight: 100;
     font-style: normal;
-    font-weight: 400;
     font-size: 1.5em;
     line-height: 35px;
     padding: 47px 0px 0px 16px;
