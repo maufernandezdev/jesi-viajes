@@ -342,8 +342,8 @@ header label .img2 {
   color: #fff;
   font-size: var(--titleFontSize);
   font-family: "Zen Antique Soft", serif;
-  font-style: normal;
   font-weight: 100;
+  font-style: normal;
   line-height: 58px;
   letter-spacing: -0.02em;
   max-width: 300px;
@@ -468,6 +468,25 @@ header label .img2 {
   }
   .front .desktop-front {
     display: block;
+  }
+  .front .desktop-front .carousel-nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: -4em;
+    z-index: 100;
+    position: relative;
+  }
+  .front .desktop-front .carousel-nav a {
+    margin: 0em 0.5em;
+    background-color: rgba(0, 0, 0, 0.4666666667);
+  }
+  .front .desktop-front .carousel-nav a:nth-child(1) {
+    margin-left: 0.5em;
+  }
+  .front .desktop-front .carousel-nav a i {
+    font-size: 2em;
+    color: #fff;
   }
 }
 @media screen and (min-width: 1366px) {
@@ -904,6 +923,14 @@ header label .img2 {
   }
 }
 @media (min-width: 1440px) {
+  .trajectory .trayectory__content {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 1440px;
+    max-width: 1440px;
+    width: 100%;
+    padding: 0px 100px;
+  }
   .trajectory .trayectory__content .card-container .trajectory__card {
     width: 400px;
     max-width: 400px;

@@ -486,6 +486,29 @@ header label .img2{
         }
         .desktop-front{
             display: block;
+            .carousel-nav{
+                // background-color: blue;
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                margin-top: -4em;
+                z-index: 100;
+                position: relative;
+                a{
+                    // background-color: red;
+                    margin: 0em 0.5em;
+                    background-color: #0007;
+                    &:nth-child(1)
+                    {
+                        // background-color: red;
+                        margin-left: 0.5em;
+                    }
+                    i{
+                        font-size: 2em;
+                        color: #fff;
+                    }
+                }
+            }
         }
     }
     @media screen and (min-width: 1366px)
@@ -941,7 +964,12 @@ header label .img2{
     }
     @media (min-width:1440px){
         .trayectory__content{
-
+            display: flex;
+            flex-wrap: wrap;
+            min-width: 1440px;
+            max-width: 1440px;
+            width: 100%;
+            padding: 0px 100px;
             .card-container{
                 .trajectory__card{
                     width: 400px;
@@ -1465,4 +1493,42 @@ footer{
 
 /* tablet responsive notes */
 /* starts at 767px and works fine up to 899px */
+
+// .carousel-fade {
+//     .carousel-inner {
+//         .carousel-item {
+//             transition: 1.5s ease;
+//             transition-property: opacity;
+//         }
+    
+//         .carousel-item,
+//         .active.left,
+//         .active.right {
+//             opacity: 0;
+//         }
+
+//         .active,
+//         .next.left,
+//         .prev.right {
+//             opacity: 1;
+//         }
+
+//         .next,
+//         .prev,
+//         .active.left,
+//         .active.right {
+//             left: 0;
+//             transform: translate3d(0, 0, 0);
+//         }
+//     }
+    
+//     .carousel-control {
+//         z-index: 2;
+//         position: relative;
+//         top: -3em;
+//         background-color: red;
+//         // width: 100%;
+//     }
+    
+// }
 
