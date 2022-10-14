@@ -662,7 +662,7 @@ header label .img2 {
   font-family: "Zen Antique Soft", serif;
   font-style: normal;
   font-weight: 100;
-  font-size: var(--24FontSize);
+  font-size: var(--36FontSize);
   line-height: 35px;
   letter-spacing: -0.02em;
   color: var(--titleColor);
@@ -1361,6 +1361,8 @@ footer .contact-info .contact-info__item:last-child {
   footer .footer__container .contact-info .contact-info__item h4 {
     font-size: var(--24FontSize);
     line-height: 28px;
+    font-style: normal;
+    font-weight: 300;
   }
 }
 @media (min-width: 1366px) {
@@ -1395,6 +1397,8 @@ footer .contact-info .contact-info__item:last-child {
   footer .footer__container .contact-info .contact-info__item h4 {
     font-size: var(--24FontSize);
     line-height: 28px;
+    font-style: normal;
+    font-weight: 300;
   }
 }
 
