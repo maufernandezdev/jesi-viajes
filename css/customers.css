@@ -26,6 +26,12 @@ header{
     opacity: 1;
     border-radius: 5px;
 }
+.customersImgsCarousel .img__item img{
+  width: 355px;
+  height: auto;
+  height: 571px;
+  /* width: 100%; */
+}
 @media (min-width: 1240px){
 
   header nav .links div a {
