@@ -17,9 +17,16 @@ body{
 }
 
 header{
-    position: relative;
+    position: fixed;
     background: rgba(157, 148, 151, 0.2);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* header label i{
+   color: var(--titleColor);
+} */
+.us{
+    margin-top: 100px;
 }
 
 .us h3{
@@ -83,6 +90,15 @@ header{
 }
 
 @media (min-width: 1240px){
+
+    header{
+        position: sticky;
+    }
+    
+    .us{
+        margin-top: 0px;
+    }
+
     header nav .links div a {
         color: var(--titleColor);
     }
