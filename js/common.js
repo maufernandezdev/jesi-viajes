@@ -11,8 +11,9 @@ if(screen.width > 1240)
         imgUs.setAttribute("src", "images/nancy-desktop-us2.png")
     }
 }
-window.onscroll = () =>{
-    // Obtenemos la posicion del scroll en pantall
+
+const dinamicNav = () =>
+{
     const scroll = document.documentElement.scrollTop || document.body.scrollTop;
     const header = document.querySelector('header');
     if(scroll > 0 && scroll < 2)
@@ -20,7 +21,7 @@ window.onscroll = () =>{
         header.classList.add('dinamicHeader');
         const img1 = document.querySelector('.img1');
         img1.classList.add('titleColor');
-         
+        
     }
     if(scroll === 0)
     {   
@@ -28,6 +29,9 @@ window.onscroll = () =>{
         header.classList.remove('dinamicHeader');
         const img1 = document.querySelector('.img1');
         img1.classList.remove('titleColor');
-         
+        
     }
 }
+
+window.document.addEventListener("touchmove", dinamicNav);
+window.document.addEventListener("scroll", dinamicNav);

@@ -65,8 +65,8 @@ if(form)
     });
 }
 
-window.onscroll = () =>{
-    // Obtenemos la posicion del scroll en pantall
+const dinamicHeader = () =>
+{
     const scroll = document.documentElement.scrollTop || document.body.scrollTop;
     const header = document.querySelector('header');
     let links = document.querySelectorAll('.link');
@@ -88,7 +88,6 @@ window.onscroll = () =>{
     }
     if(scroll === 0)
     {   
-        console.log('llegaste al tope');
         header.classList.remove('dinamicHeader');
         if(screen.width > 1240)
         {
@@ -113,4 +112,6 @@ window.onscroll = () =>{
         } 
     }
 }
-// Detectamos cuando el usuario desplace la pantalla
+
+window.document.addEventListener("touchmove", dinamicHeader);
+window.document.addEventListener("scroll", dinamicHeader);
