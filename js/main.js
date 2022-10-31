@@ -83,7 +83,7 @@ const dinamicHeader = () =>
     const scroll = document.scrollingElement.scrollTop|| document.body.scrollTop;
     const header = document.querySelector('header');
     let links = document.querySelectorAll('.link');
-    if(scroll > 0 && scroll < 10)
+    if(scroll > 0)
     {   
         header.classList.add('dinamicHeader');
         if(screen.width > 1240)
