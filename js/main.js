@@ -65,16 +65,30 @@ if(form)
     });
 }
 
+const deleteRules = () =>
+{
+    const rules = document.styleSheets[0].cssRules;
+    for (let index = 0; index < rules.length; index++)
+    {
+        if(rules[index].selectorText == ".links a::after")
+        {
+            document.styleSheets[0].deleteRule(index);
+        }   
+    }
+}
+
 const dinamicHeader = () =>
 {
-    const scroll = document.documentElement.scrollTop || document.body.scrollTop;
+    // document.scrollingElement
+    const scroll = document.scrollingElement.scrollTop|| document.body.scrollTop;
     const header = document.querySelector('header');
     let links = document.querySelectorAll('.link');
-    if(scroll > 0 && scroll < 2)
+    if(scroll > 0 && scroll < 10)
     {   
         header.classList.add('dinamicHeader');
         if(screen.width > 1240)
         {
+            deleteRules();
             document.styleSheets[0].insertRule(".links a::after {background-color: #000 !important;}", 0);
             links.forEach(link => {
                 link.classList.add('titleColor');
@@ -86,30 +100,23 @@ const dinamicHeader = () =>
             img1.classList.add('titleColor');
         }   
     }
-    if(scroll === 0)
+
+    if (scroll === 0)
     {   
+        deleteRules();
         header.classList.remove('dinamicHeader');
         if(screen.width > 1240)
         {
-            const rules = document.styleSheets[0].cssRules;
-            for (let index = 0; index < rules.length; index++)
-            {
-                if(rules[index].selectorText == ".links a::after")
-                {
-                    document.styleSheets[0].deleteRule(index);
-                }   
-            }
-            // console.log("rules: ", rules);
             links.forEach(link => {
                 link.classList.remove('titleColor');
             });
-            document.styleSheets[0].deleteRule(0);
         }
         else
         {
             const img1 = document.querySelector('.img1');
             img1.classList.remove('titleColor');
-        } 
+        }
+        document.styleSheets[0].deleteRule(0); 
     }
 }
 

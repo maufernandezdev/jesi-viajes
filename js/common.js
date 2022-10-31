@@ -16,12 +16,11 @@ const dinamicNav = () =>
 {
     const scroll = document.documentElement.scrollTop || document.body.scrollTop;
     const header = document.querySelector('header');
-    if(scroll > 0 && scroll < 2)
+    if(scroll > 0 && scroll < 10)
     {   
         header.classList.add('dinamicHeader');
         const img1 = document.querySelector('.img1');
-        img1.classList.add('titleColor');
-        
+        img1.classList.add('titleColor');       
     }
     if(scroll === 0)
     {   
@@ -29,7 +28,6 @@ const dinamicNav = () =>
         header.classList.remove('dinamicHeader');
         const img1 = document.querySelector('.img1');
         img1.classList.remove('titleColor');
-        
     }
 }
 
