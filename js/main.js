@@ -30,6 +30,8 @@ const notification = (text) =>
     Toastify({
         text: text,
         className: "info",
+        gravity: "bottom", 
+        position: "center",
         style: {
           background: "#DF7539",
           color: "#fff"
@@ -46,7 +48,7 @@ if(form)
     btn.value = 'Enviando...';
     
     const serviceID = 'default_service';
-    const templateID = 'template_24lczss';
+    const templateID = 'template_t4k09wh';
     
     emailjs.sendForm(serviceID, templateID, this)
         .then(() => {
@@ -122,3 +124,13 @@ const dinamicHeader = () =>
 
 window.document.addEventListener("touchmove", dinamicHeader);
 window.document.addEventListener("scroll", dinamicHeader);
+
+// dinamic button for IOS System
+const mesaggeButton = document.querySelector('#sendMessageContainer');
+const isIOS = !window.MSStream && /iPad|iPhone|iPod/.test(navigator.userAgent);
+console.log('is IOS: ', isIOS);
+if(isIOS)
+{
+    mesaggeButton.innerHTML = '';
+    mesaggeButton.innerHTML = `<a href="#contact">ENVIAR MENSAJE <i class='bx bx-chevron-right'></i> </a> `;
+}

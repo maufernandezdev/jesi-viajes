@@ -16,7 +16,7 @@ const dinamicNav = () =>
 {
     const scroll = document.documentElement.scrollTop || document.body.scrollTop;
     const header = document.querySelector('header');
-    if(scroll > 0 && scroll < 10)
+    if(scroll > 0)
     {   
         header.classList.add('dinamicHeader');
         const img1 = document.querySelector('.img1');

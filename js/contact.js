@@ -4,6 +4,8 @@ const notification = (text) =>
     Toastify({
         text: text,
         className: "info",
+        gravity: "bottom", 
+        position: "center",
         style: {
           background: "#DF7539",
           color: "#fff"
@@ -19,7 +21,7 @@ event.preventDefault();
 btn.value = 'Enviando...';
 
 const serviceID = 'default_service';
-const templateID = 'template_24lczss';
+const templateID = 'template_t4k09wh';
 
 emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
